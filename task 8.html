@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"></p>
+    <button class="name" onclick="myFunction()">show</button>
+    <button class="image" onclick=showimage()>show image</button>
+    <button class="image" onclick=showimage()>show image</button>
+    <button class="image" onclick=showimage()>show image</button>
+    <button class="image" onclick=showimage() onmouseover=changesize()>size-hover</button>
+    <button class="size" onclick=changesize()>changesize</button>
+    <button class="opa" onclick=changeOpacity()>changeOpacity</button>
+    <button class="opa1" onclick=changeOpacity()>changeOpacity+</button>
+    <button class="opa2" onclick=changeOpacity()>changeOpacity++</button>
+    <button class="opa3" onclick=changeOpacity()>changeOpacity+++</button>
+    <div id="transparency"><img src="./bike" height="250px" width="250px"></div>
+    <div id="div1">
+    </div>
+        <script>
+    function myFunction(){
+        document.getElementById("one").innerHTML = "<h1 style='color:green; font-size:50px;'>charan venkata sai</h1>"
+    }
+
+    function showimage(){
+        document.getElementById("div1").innerHTML="<img src='./bike' height='200px' width='300px'>"
+    }
+    function showimage(){
+       let img =document.getElementById("transparency")
+       img.innerHTML="<img src='./bike' style='height='200px' width='200px'></img>"
+    }
+    function showimage(){
+       let img =document.getElementById("transparency")
+       img.innerHTML="<img src='./bike' style='height='250px' width='250px'></img>"
+    }
+    function showimage(){
+       let img =document.getElementById("transparency")
+       img.innerHTML="<img src='./bike' style='height='300px' width='300px'></img>"
+    }
+    function changesize(){
+       let img =document.getElementById("transparency")
+       img.innerHTML="<img src='./bike' style='height='200px' width='200px'></img>"
+    }
+
+    function changeOpacity(){
+    let img = document.getElementById("transparency")
+    img.innerHTML="<img src='./bike' style='opacity:0.7' width='300px' height='300px'></img>"
+    }
+
+    function changeOpacity(){
+    let img = document.getElementById("transparency")
+    img.innerHTML="<img src='./bike' style='Opacity:0.3' width='300px' height='300px'></img>"
+    }
+
+    function changeOpacity(){
+    let img = document.getElementById("transparency")
+    img.innerHTML="<img src='./bike' style='Opacity:0.2' width='300px' height='300px'></img>"
+    }
+
+    function changeOpacity(){
+    let img = document.getElementById("transparency")
+    img.innerHTML="<img src='./bike' style='Opacity:0.1' width='300px' height='300px'></img>"
+    }
+</script>
+
+</body>
+</html>
